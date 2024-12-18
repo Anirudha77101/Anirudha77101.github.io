@@ -5,46 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anirudha Karande - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Anirudha Karande</h1>
-        <p>Engineer on the Adventure</p>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">AK</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <section id="about">
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Anirudha Karande</h1>
+            <p>Engineer on the Adventure</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
         <h2>About Me</h2>
-        <p>An ambitious and capable individual with a deeply rooted passion for engineering and exploration. My journey as an engineer has taken many forms, from crafting Steering Systems for Formula Student to developing cutting-edge software solutions. I thrive on challenges and continuously seek opportunities to innovate and create.</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Image Quality Testing Software</h3>
-            <p>Developed a sophisticated Image Quality Testing Software for ADAS Cameras and Camera Monitoring Systems (CMS) in the Automotive Industry. Key achievements:</p>
-            <ul>
-                <li>Developed complete signal processing pipeline</li>
-                <li>Implemented advanced edge-fitting algorithms</li>
-                <li>Created robust edge detection system</li>
-                <li>Built interactive Qt-based visualization system</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>Formula Student Steering System</h3>
-            <p>Designed and implemented a high-performance steering system for Formula Student competition, focusing on precision, reliability, and driver feedback. The project involved comprehensive mechanical design, analysis, and optimization.</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p>An ambitious and capable individual with a deeply rooted passion for engineering and exploration. My journey as an engineer has taken many forms, from crafting Steering Systems for Formula Student to developing cutting-edge software solutions. I thrive on challenges and continuously seek opportunities to innovate and create.</p>
+            </div>
+            <div class="skills">
+                <h3>Technical Skills</h3>
+                <div class="skill-tags">
+                    <span>C++</span>
+                    <span>Qt</span>
+                    <span>OpenCV</span>
+                    <span>Image Processing</span>
+                    <span>Python</span>
+                    <span>Git</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: karandeanirudha7@gmail.com</p>
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-images">
+                    <img src="images/sfr/main-interface.jpg" alt="SFR Analysis Interface">
+                    <div class="image-gallery">
+                        <img src="images/sfr/edge-detection.jpg" alt="Edge Detection">
+                        <img src="images/sfr/results-plot.jpg" alt="Results Plot">
+                        <img src="images/sfr/analysis.jpg" alt="Analysis Dashboard">
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Image Quality Testing Software</h3>
+                    <p>Developed a comprehensive image quality analysis system implementing ISO 12233 standard for camera evaluation. Features advanced edge detection, MTF analysis, and real-time visualization.</p>
+                    <ul class="project-features">
+                        <li>Complete signal processing pipeline</li>
+                        <li>Advanced edge-fitting algorithms</li>
+                        <li>Qt-based interactive visualization</li>
+                        <li>Multi-threaded performance optimization</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>Qt</span>
+                        <span>OpenCV</span>
+                        <span>Signal Processing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-images">
+                    <img src="images/steering/main-design.jpg" alt="Steering System Design">
+                    <div class="image-gallery">
+                        <img src="images/steering/implementation.jpg" alt="Implementation">
+                        <img src="images/steering/testing.jpg" alt="Testing">
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Formula Student Steering System</h3>
+                    <p>Designed and implemented a high-performance steering system for Formula Student competition, focusing on precision, reliability, and driver feedback.</p>
+                    <ul class="project-features">
+                        <li>Mechanical design and analysis</li>
+                        <li>Performance optimization</li>
+                        <li>Ergonomic considerations</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>CAD</span>
+                        <span>FEA</span>
+                        <span>Mechanical Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <p>Feel free to reach out for collaborations or opportunities.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:karandeanirudha7@gmail.com">karandeanirudha7@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Anirudha Karande. All rights reserved.</p>
+    </footer>
 </body>
 </html>
