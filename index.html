@@ -9,8 +9,11 @@
 </head>
 <body>
     <header>
-        <h1>Anirudha Karande</h1>
-        <p>Engineer on the Adventure</p>
+        <div class="profile-container">
+            <img src="your-profile-photo.jpg" alt="Anirudha Karande" class="profile-photo">
+            <h1>Anirudha Karande</h1>
+            <p>Engineer on the Adventure</p>
+        </div>
     </header>
 
     <nav>
@@ -21,29 +24,58 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>An ambitious and capable individual with a deeply rooted passion for engineering and exploration. My journey as an engineer has taken many forms, from crafting Steering Systems for Formula Student to developing cutting-edge software solutions. I thrive on challenges and continuously seek opportunities to innovate and create.</p>
+        <div class="about-container">
+            <img src="engineer-at-work.jpg" alt="Engineering Work" class="about-image">
+            <p>An ambitious and capable individual with a deeply rooted passion for engineering and exploration. My journey as an engineer has taken many forms, from crafting Steering Systems for Formula Student to developing cutting-edge software solutions. I thrive on challenges and continuously seek opportunities to innovate and create.</p>
+        </div>
     </section>
 
     <section id="projects">
         <h2>My Projects</h2>
         <div class="project">
-            <h3><i class="fas fa-camera"></i> Image Quality Testing Software</h3>
-            <p>Developed a sophisticated Image Quality Testing Software for ADAS Cameras and Camera Monitoring Systems (CMS) in the Automotive Industry. This comprehensive solution, built using C++, OpenCV, and Qt, enables precise quality assessment and validation of automotive camera systems.Developed complete signal processing pipeline including edge profile computation, ESF (Edge Spread Function) generation, derivative operations for LSF computation, and DFT-based SFR calculation
-Implemented advanced edge-fitting algorithms using 5th order polynomial modeling to compensate for optical distortion and spatial non-uniformity
-Created robust edge detection and super-sampling (4x) implementation for sub-pixel edge location and profile generation
-Engineered windowing system supporting both Hamming and Tukey windows for SFR smoothing with configurable α parameters
-Integrated frequency-domain corrections including derivative filter compensation and edge-angle normalization using cos(θ) adjustments
-Built interactive Qt-based visualization system for edge profile analysis, MTF curves, and acutance measurements with adjustable ROI selection.</p>
+            <div class="project-content">
+                <div class="project-text">
+                    <h3><i class="fas fa-camera"></i> Image Quality Testing Software</h3>
+                    <p>Developed a sophisticated Image Quality Testing Software for ADAS Cameras and Camera Monitoring Systems (CMS) in the Automotive Industry.</p>
+                    <div class="project-details">
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Developed complete signal processing pipeline including edge profile computation</li>
+                            <li>Implemented advanced edge-fitting algorithms using 5th order polynomial modeling</li>
+                            <li>Created robust edge detection and super-sampling (4x) implementation</li>
+                            <li>Engineered windowing system supporting both Hamming and Tukey windows</li>
+                            <li>Integrated frequency-domain corrections</li>
+                            <li>Built interactive Qt-based visualization system</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-images">
+                    <img src="iq-testing-1.jpg" alt="IQ Testing Software Interface" class="project-image">
+                    <img src="iq-testing-2.jpg" alt="MTF Analysis" class="project-image">
+                </div>
+            </div>
         </div>
+
         <div class="project">
-            <h3><i class="fas fa-car"></i> Formula Student Steering System</h3>
-            <p>Designed and implemented a high-performance steering system for Formula Student competition, focusing on precision, reliability, and driver feedback. The project involved comprehensive mechanical design, analysis, and optimization.</p>
+            <div class="project-content">
+                <div class="project-text">
+                    <h3><i class="fas fa-car"></i> Formula Student Steering System</h3>
+                    <p>Designed and implemented a high-performance steering system for Formula Student competition, focusing on precision, reliability, and driver feedback. The project involved comprehensive mechanical design, analysis, and optimization.</p>
+                </div>
+                <div class="project-images">
+                    <img src="steering-system-1.jpg" alt="Steering System Design" class="project-image">
+                    <img src="steering-system-2.jpg" alt="Implementation" class="project-image">
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:karandeanirudha7@gmail.com">karandeanirudha7@gmail.com</a></p>
+        <div class="contact-container">
+            <img src="contact-image.jpg" alt="Contact" class="contact-image">
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:karandeanirudha7@gmail.com">karandeanirudha7@gmail.com</a></p>
+        </div>
     </section>
 </body>
 </html>
