@@ -3,236 +3,18 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Anirudha Karande - Portfolio</title>
+   <title>Anirudha Karande | Robotics Research</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-   <style>
-       * {
-           margin: 0;
-           padding: 0;
-           box-sizing: border-box;
-           font-family: 'Arial', sans-serif;
-       }
-
-       body {
-           line-height: 1.6;
-           color: #333;
-       }
-
-       .navbar {
-           position: fixed;
-           top: 0;
-           width: 100%;
-           background: rgba(255, 255, 255, 0.95);
-           box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-           z-index: 1000;
-       }
-
-       .nav-content {
-           max-width: 1200px;
-           margin: 0 auto;
-           padding: 1rem;
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
-       }
-
-       .nav-links a {
-           color: #2c3e50;
-           text-decoration: none;
-           margin-left: 2rem;
-           transition: color 0.3s;
-       }
-
-       .nav-links a:hover {
-           color: #3498db;
-       }
-
-       .hero-section {
-           height: 100vh;
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           background: linear-gradient(135deg, #2c3e50, #3498db);
-           color: white;
-           text-align: center;
-       }
-
-       .hero-content h1 {
-           font-size: 3rem;
-           margin-bottom: 1rem;
-       }
-
-       .social-links {
-           margin-top: 2rem;
-       }
-
-       .social-links a {
-           color: white;
-           font-size: 1.5rem;
-           margin: 0 1rem;
-           transition: transform 0.3s;
-       }
-
-       .social-links a:hover {
-           transform: scale(1.2);
-       }
-
-       section {
-           padding: 5rem 2rem;
-           max-width: 1200px;
-           margin: 0 auto;
-       }
-
-       h2 {
-           text-align: center;
-           margin-bottom: 3rem;
-           color: #2c3e50;
-           font-size: 2rem;
-       }
-
-       .about-content {
-           display: grid;
-           grid-template-columns: 1fr;
-           gap: 2rem;
-       }
-
-       .skill-tags {
-           display: flex;
-           flex-wrap: wrap;
-           gap: 1rem;
-           margin-top: 1rem;
-       }
-
-       .skill-tags span {
-           background: #f0f2f5;
-           padding: 0.5rem 1rem;
-           border-radius: 20px;
-           font-size: 0.9rem;
-       }
-
-       .project-grid {
-           display: grid;
-           gap: 3rem;
-       }
-
-       .project-card {
-           background: white;
-           border-radius: 10px;
-           overflow: hidden;
-           box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-           padding: 2rem;
-           transition: transform 0.3s ease;
-       }
-
-       .project-card:hover {
-           transform: translateY(-5px);
-           box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-       }
-
-       .project-images {
-           width: 100%;
-           max-width: 800px;
-           margin: 0 auto;
-       }
-
-       .project-images img {
-           width: 100%;
-           max-height: 400px;
-           object-fit: contain;
-           border-radius: 8px;
-           margin-bottom: 1rem;
-           background: #f5f5f5;
-           padding: 1rem;
-       }
-
-       .project-features {
-           list-style-position: inside;
-           margin: 1rem 0;
-       }
-
-       .project-features li {
-           margin-bottom: 0.5rem;
-           padding-left: 1rem;
-           position: relative;
-       }
-
-       .project-features li:before {
-           content: "•";
-           position: absolute;
-           left: 0;
-           color: #3498db;
-       }
-
-       .project-tech {
-           display: flex;
-           flex-wrap: wrap;
-           gap: 0.5rem;
-           margin-top: 1rem;
-       }
-
-       .project-tech span {
-           background: #e1f5fe;
-           color: #0288d1;
-           padding: 0.3rem 0.8rem;
-           border-radius: 15px;
-           font-size: 0.9rem;
-       }
-
-       .contact-content {
-           text-align: center;
-           max-width: 600px;
-           margin: 0 auto;
-       }
-
-       .contact-info {
-           display: flex;
-           flex-direction: column;
-           gap: 1rem;
-           margin-top: 2rem;
-       }
-
-       .contact-item {
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           gap: 0.5rem;
-       }
-
-       .contact-item a {
-           color: #2c3e50;
-           text-decoration: none;
-       }
-
-       footer {
-           text-align: center;
-           padding: 2rem;
-           background: #2c3e50;
-           color: white;
-       }
-
-       @media (max-width: 768px) {
-           .nav-content {
-               flex-direction: column;
-               gap: 1rem;
-           }
-
-           .nav-links a {
-               margin: 0 0.5rem;
-           }
-
-           .hero-content h1 {
-               font-size: 2rem;
-           }
-       }
-   </style>
 </head>
 <body>
    <nav class="navbar">
        <div class="nav-content">
            <div class="nav-links">
-               <a href="#home">Home</a>
-               <a href="#about">About</a>
+               <a href="#research">Research</a>
                <a href="#projects">Projects</a>
+               <a href="#publications">Publications</a>
                <a href="#contact">Contact</a>
            </div>
        </div>
@@ -241,161 +23,95 @@
    <section id="home" class="hero-section">
        <div class="hero-content">
            <h1>Anirudha Karande</h1>
-           <p>Robotics | Automotives</p>
+           <p>Robotics Research | Control Systems | Computer Vision</p>
        </div>
    </section>
 
-   <section id="about" class="about-section">
-       <h2>About Me</h2>
+   <section id="research" class="about-section">
+       <h2>Research Interests</h2>
        <div class="about-content">
-           <div class="about-text">
-               <p>An ambitious and capable individual with a deeply rooted passion for engineering and exploration. My journey as an engineer has taken many forms, from crafting Steering Systems for Formula Student to developing cutting-edge software solutions. I thrive on challenges and continuously seek opportunities to innovate and create, Eager to work hard and learn continuously.</p>
-           </div>
+           <p>My research focuses on real-time control systems for collaborative robots, perception algorithms for autonomous manipulation, and trajectory optimization for dynamic systems. Current work involves developing low-latency control architectures and robust perception pipelines for industrial applications.</p>
        </div>
    </section>
 
    <section id="projects" class="projects-section">
-       <h2>Projects</h2>
+       <h2>Selected Projects</h2>
        <div class="project-grid">
-                      <div class="project-card">
-               <div class="project-images">
-                   <img src="images/projects/ImageQualityTestingSoftware.jpeg" alt="Image-Quality(Sharpness) Testing Software Application">
-               </div>
-               <div class="project-info">
-                   <h3>Image Quality Testing Software</h3>
-                   <p>    MTF/SFR </p>
-                   <ul class="project-features">
-                       <li>1</li>
-                       <li>2</li>
-                       <li>3)</li>
-                   </ul>
-                   <div class="project-tech">
-                      
-                       <span>Computer Vision</span>
-                       <span>C++</span>
-                       <span>Image Processing</span>
-                       <span>Signal Processing</span>
-                   </div>
-               </div>
-           </div>
            <div class="project-card">
-               <div class="project-images">
-                   <img src="images/projects/A3C.jpeg" alt="ASYSTR A3C Robot">
-                   <img src="images/projects/A5C.jpeg" alt="ASYSTR A5C Robot">
-               </div>
                <div class="project-info">
-                   <h3>Indigenous Collaborative Robotic Arm (ASYSTR A3C)</h3>
-                   <p>Developed ROS2-based control interface for 6DoF collaborative robot at Systemantics India.</p>
+                   <h3>Implementation of Collaborative Robot Control Architecture</h3>
+                   <p>Development of real-time control systems for industrial collaborative robots focusing on latency optimization and human-robot interaction. Achieved significant performance improvements through advanced middleware integration.</p>
                    <ul class="project-features">
-                       <li>Reduced interface latency from 20ms to 100ns</li>
-                       <li>Implemented QoS policies for ROS2-DDS interoperability</li>
-                       <li>Designed gamepad-based intuitive control system</li>
+                       <li>Reduced control loop latency from 20ms to 100ns through optimized ROS2-DDS bridge</li>
+                       <li>Implemented deterministic QoS policies for real-time control requirements</li>
+                       <li>Developed intuitive human-robot interaction interface</li>
                    </ul>
                    <div class="project-tech">
                        <span>ROS2</span>
                        <span>RTI Connext DDS</span>
-                       <span>Robotics</span>
-                       <span>Control Systems</span>
+                       <span>Real-time Systems</span>
                    </div>
+               </div>
+               <div class="project-images">
+                   <img src="images/projects/A3C.jpeg" alt="ASYSTR A3C Implementation">
+                   <img src="images/projects/A5C.jpeg" alt="Control Architecture">
                </div>
            </div>
 
            <div class="project-card">
-               <div class="project-images">
-                   <img src="images/projects/Robocup1.jpeg" alt="Robocup ARM Challenge">
-                   <img src="images/projects/Robocup2.jpeg" alt="Robocup ARM Challenge">
-                   <img src="images/projects/Robocup3.jpeg" alt="Robocup ARM Challenge">
-                   <img src="images/projects/Robocup4.jpeg" alt="Robocup ARM Challenge">
-                   <img src="images/projects/RobocupGroup.jpeg" alt="Group Photo">
-                  
-                  
-                  
-               </div>
                <div class="project-info">
-                   <h3>Autonomous Robot Manipulator</h3>
-                   <p>Developed perception and planning system for Robocup ARM Challenge 2023 (5th Globally, 3rd in Asia)</p>
+                   <h3>Perception Algorithms for Dynamic Manipulation</h3>
+                   <p>Research on robust perception algorithms for autonomous manipulation in dynamic environments. Developed integrated system achieving top rankings in international competition.</p>
                    <ul class="project-features">
-                       <li>Implemented ICP and YOLO-V4 for 6DOF grasp pose estimation</li>
-                       <li>Achieved 85% success rate in dynamic pick-and-place tasks</li>
-                       <li>Integrated Task and Motion Planning (TAMP)</li>
+                       <li>Implemented hybrid YOLO-V4 and ICP pipeline for 6-DOF pose estimation</li>
+                       <li>Achieved 85% success rate in dynamic object manipulation tasks</li>
+                       <li>Developed task and motion planning integration for long-horizon tasks</li>
                    </ul>
                    <div class="project-tech">
-                       <span>Deep Learning</span>
                        <span>Computer Vision</span>
-                       <span>ROS</span>
+                       <span>Deep Learning</span>
                        <span>Motion Planning</span>
                    </div>
                </div>
+               <div class="project-images">
+                   <img src="images/projects/Robocup1.jpeg" alt="Perception System">
+                   <img src="images/projects/Robocup2.jpeg" alt="Manipulation Results">
+               </div>
            </div>
 
            <div class="project-card">
                <div class="project-info">
-                   <h3>Machining Cost Estimation System</h3>
-                   <p>Led development of CV-based cost estimation app reducing processing time from hours to seconds.</p>
+                   <h3>MTF-based Image Quality Analysis System</h3>
+                   <p>Implementation of ISO 12233 standard for quantitative image quality assessment through Modulation Transfer Function analysis.</p>
                    <ul class="project-features">
-                       <li>Implemented real-time SSD Net model using PyTorch</li>
-                       <li>Reduced estimation time to under 10 seconds</li>
-                       <li>Created intuitive desktop interface for local vendors</li>
+                       <li>Developed complete signal processing pipeline for edge-based MTF analysis</li>
+                       <li>Implemented real-time processing capabilities for live analysis</li>
+                       <li>Created visualization tools for results interpretation</li>
                    </ul>
                    <div class="project-tech">
-                       <span>PyTorch</span>
+                       <span>Signal Processing</span>
+                       <span>C++</span>
                        <span>Computer Vision</span>
-                       <span>Deep Learning</span>
-                       <span>Desktop App Development</span>
                    </div>
+               </div>
+               <div class="project-images">
+                   <img src="images/projects/ImageQualityTestingSoftware.jpeg" alt="MTF Analysis">
                </div>
            </div>
 
            <div class="project-card">
                <div class="project-info">
-                   <h3>Electric Formula Student Vehicle Control Systems</h3>
-                   <p>Developed advanced control systems for Electric Formula Student Vehicle.</p>
+                   <h3>Vehicle Dynamics Control Systems</h3>
+                   <p>Research on advanced control systems for electric vehicles including torque vectoring and traction control optimization.</p>
                    <ul class="project-features">
-                       <li>Implemented gain-scheduled PID Torque Vectoring</li>
-                       <li>Designed fuzzy logic Traction Control system</li>
-                       <li>Reduced cornering time by 0.3s and overall weight by 7kg</li>
+                       <li>Developed gain-scheduled PID control system for torque vectoring</li>
+                       <li>Implemented fuzzy logic-based traction control</li>
+                       <li>Achieved 0.3s improvement in cornering performance</li>
                    </ul>
                    <div class="project-tech">
+                       <span>Control Systems</span>
                        <span>MATLAB</span>
-                       <span>Simulink</span>
-                       <span>Control Systems</span>
-                       <span>LaunchPad XL F28379D</span>
-                   </div>
-               </div>
-           </div>
-
-           <div class="project-card">
-               <div class="project-info">
-                   <h3>Autonomous Path-follower Drone</h3>
-                   <p>MathWorks Minidrone Competition India 2022 project implementing vision-based path following.</p>
-                   <ul class="project-features">
-                       <li>Designed Pure Pursuit algorithm for Parrot Mamba mini-drone</li>
-                       <li>Implemented PI control loop running at 200Hz</li>
-                       <li>Developed computer vision for spatial coordinate computation</li>
-                   </ul>
-                   <div class="project-tech">
-                       <span>MATLAB</span>
-                       <span>Simulink</span>
-                       <span>Computer Vision</span>
-                       <span>Control Systems</span>
-                   </div>
-               </div>
-           </div>
-
-           <div class="project-card">
-               <div class="project-info">
-                   <h3>High-Performance Electric Kart</h3>
-                   <p>Led team to 1st place in Engineering Design at Indian Karting Race 6.0</p>
-                   <ul class="project-features">
-                       <li>Led 20-member team across multiple functions</li>
-                       <li>Implemented Torque vectoring using ROS2</li>
-                       <li>Developed telemetry system with gain scheduled PID</li>
-                   </ul>
-                   <div class="project-tech">
-                       <span>ROS2</span>
-                       <span>Raspberry Pi</span>
-                       <span>Control Systems</span>
-                       <span>Team Leadership</span>
+                       <span>Real-time Implementation</span>
                    </div>
                </div>
            </div>
@@ -405,7 +121,6 @@
    <section id="contact" class="contact-section">
        <h2>Contact</h2>
        <div class="contact-content">
-           <p>Feel free to reach out for collaborations or opportunities.</p>
            <div class="contact-info">
                <div class="contact-item">
                    <i class="fas fa-envelope"></i>
@@ -420,7 +135,7 @@
    </section>
 
    <footer>
-       <p>&copy; 2024 Anirudha Karande. All rights reserved.</p>
+       <p>&copy; 2024 Anirudha Karande | Robotics Research</p>
    </footer>
 </body>
 </html>
