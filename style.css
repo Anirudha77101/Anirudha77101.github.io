@@ -1,0 +1,130 @@
+:root {
+    --bg: #f5f5f5;
+    --text: #333;
+    --accent: #2c3e50;
+    --border: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    line-height: 1.8;
+    color: var(--text);
+    background: var(--bg);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+}
+
+.hero-section {
+    padding: 120px 2rem 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.project-card {
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.project-images img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.project-features {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.project-features li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.project-features li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-tech span {
+    font-family: 'SF Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--accent);
+}
+
+.contact-section {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text);
+    border-top: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+    .nav-links a {
+        margin-left: 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
