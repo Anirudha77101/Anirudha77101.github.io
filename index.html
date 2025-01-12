@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anirudha Karande - Robotics Engineer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles to accommodate small text details */
+        .text-tiny {
+            font-size: 0.6rem;
+        }
+    </style>
 </head>
 <body class="bg-white">
     <!-- Navigation -->
@@ -46,10 +52,30 @@
                 </div>
             </div>
 
+            <!-- Camera Monitoring System -->
+            <div class="space-y-6">
+                <div class="text-center">
+                    <h3 class="text-2xl text-gray-800 font-medium">Camera Monitoring System/Image Quality Testing Software | ARAI</h3>
+                    <div class="text-gray-600 mt-2">Mar. 2024 - Present</div>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-gray-700 mb-4">First-of-its-kind CMS testing facility in India and Third-of-its-kind in the world, established at ARAI Safety and Homologation Laboratory</p>
+                    <p class="text-gray-700 mb-4">Enables testing compliance with ISO 16505, ECE R46, and AIS 001/002 (Rev. 2) — 2023 standards</p>
+                    <p class="text-gray-700 mb-4">Critical for advancing vehicle safety and ADAS technologies in India</p>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Developed high-precision image quality testing software (C++, OpenCV, Qt5) that achieved 99% accuracy compared to SFRMAT and MITRE algorithms in camera resolution measurements, resulting in 7.2Lakhs INR ($9,000 USD) cost savings, Copyright of software is in progress</li>
+                        <li>Designed and developed high-precision trans-impedance amplifier device with switchable feedback resistance (1kQ-100kQ), achieving three-stage gain control and <10mVp-p noise performance in photodetection measurements for testing Camera's temporal performance</li>
+                        <li>Designed modular testing architecture supporting multiple chart types (slanted-edge, color checker), batch processing, and automated report generation for industrial camera certification</li>
+                        <li>Designed and developed point light source (PLS) testing device for automotive CMS, enabling luminance profile analysis and spatial resolution measurements up to 8x106 cd/m2 following ECE-R 112 regulations</li>
+                        <li>Implemented automated luminance profile analysis system with horizontal/vertical scanning capabilities, achieving Point Light Source Detection Factor (PLSDF) measurements with +5% accuracy for CMS compliance testing</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Autonomous Robot Manipulator -->
             <div class="space-y-6">
                 <div class="text-center">
-                    <h3 class="text-2xl text-gray-800 font-medium">Autonomous Robot Manipulator | Robocup ARM Challenge 2023</h3>
+                    <h3 class="text-2xl text-gray-800 font-medium">Autonomous Robot Manipulator | Robocup ARM Challenge Finals 2023 (Bordeaux, France)</h3>
                     <div class="text-gray-600 mt-2">Jan. 2023 - July 2023</div>
                 </div>
                 <div class="grid grid-cols-3 gap-4">
@@ -60,9 +86,9 @@
                 <div class="max-w-4xl mx-auto">
                     <p class="text-gray-700 mb-4">Developed an autonomous robot manipulation system achieving significant success in international competition.</p>
                     <ul class="list-disc pl-5 space-y-2 text-gray-700">
-                        <li>Developed hybrid perception pipeline integrating YOLOv4 with RANSAC-ICP registration using MATLAB Computer Vision toolbox and ROS, achieving 40% improved pose estimation</li>
-                        <li>Created Task and Motion Planning framework integrating symbolic task planning(TAMP) with RRT-based motion planning</li>
-                        <li>Achieved 85% grasp success rate in cluttered environments</li>
+                        <li>Engineered a multi-stage perception pipeline combining YOLOv4 for object detection and RANSAC-ICP for point cloud registration, cascaded point cloud processing involving voxel downsampling, normal estimation, and outlier removal using statistical filtering</li>
+                        <li>Created point cloud processing pipeline that estimates surface normals and local curvature through least-squares plane fitting on neighborhood points, enabling robust grasp point selection by identifying antipodal point pairs with opposing surface normals aligned with gripper approach direction</li>
+                        <li>Developed state machine-based task planning using hierarchical finite state machines for high-level task decomposition, integrating grasp planning, motion planning and force control primitives with fallback recovery behaviors to achieve 85% grasp success in cluttered environments</li>
                         <li>Secured 5th Rank globally and 3rd in Asia, among >20 teams worldwide</li>
                     </ul>
                 </div>
@@ -75,28 +101,28 @@
                     <div class="text-gray-600 mt-2">Aug. 2023 - Dec. 2023</div>
                 </div>
                 <div class="max-w-4xl mx-auto">
-                    <div class="relative pt-[56.25%]">
-                        <iframe 
-                            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
-                            src="https://www.youtube.com/embed/ti-P3bKMcXs"
-                            title="Industrial Vision System Demo"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Architected dual-sensor vision system with ROS2, RealSense D405, and VL53L3CX ToF sensors, achieving 98.5% pick success rate</li>
+                        <li>Designed and assembled modular support board (12.70x9mm) featuring LED illumination control through KTD2691 driver supporting 128-level brightness control and ToF ranging functionality with +5mm accuracy</li>
+                        <li>Engineered comprehensive vision pipeline integrating YOLO-based object detection with stereo-ToF point cloud processing, achieving 95% classification accuracy at 30 FPS and ±2mm depth accuracy on reflective industrial parts with 95% accuracy</li>
+                        <li>Designed ROS2 node architecture for sensor fusion and grasp point estimation, with parallel processing streams delivering low-latency (50ms) pick validation</li>
+                    </ul>
                 </div>
-                <div class="grid grid-cols-3 gap-4">
-                    <img src="images/Systemantics/blockdiagram.png" alt="Vision System Block Diagram" class="w-full h-64 object-cover rounded-lg shadow-md">
-                    <img src="images/Systemantics/CAD.png" alt="CAD Design" class="w-full h-64 object-cover rounded-lg shadow-md">
-                    <img src="images/Systemantics/D405.jpeg" alt="RealSense D405 Setup" class="w-full h-64 object-cover rounded-lg shadow-md">
+            </div>
+
+            <!-- Machining Cost Estimation Project -->
+            <div class="space-y-6">
+                <div class="text-center">
+                    <h3 class="text-2xl text-gray-800 font-medium">Machining Cost Estimation using AI | Final Year Project</h3>
+                    <div class="text-gray-600 mt-2">Oct. 2022 - April 2023</div>
                 </div>
                 <div class="max-w-4xl mx-auto">
                     <ul class="list-disc pl-5 space-y-2 text-gray-700">
-                        <li>Architected dual-sensor vision system with ROS2, RealSense D405, and VL53L3CX ToF sensors, achieving 98.5% pick success rate</li>
-                        <li>Designed and assembled modular support board featuring LED illumination control and ToF ranging functionality</li>
-                        <li>Engineered vision pipeline integrating YOLO-based detection with stereo-ToF processing, achieving 95% classification accuracy</li>
-                        <li>Designed ROS2 node architecture for sensor fusion with 50ms latency</li>
+                        <li>Led a team of 4 to implement a Single Shot Multibox Detector (SSD) using PyTorch to detect and localize 24 different machining features in 3D CAD models, achieving 95% accuracy in feature recognition</li>
+                        <li>Engineered custom PyTorch neural network architectures with 3D convolutional layers for processing binvox-formatted CAD files, enabling accurate volume calculations and machining feature predictions</li>
+                        <li>Led the development of an AI-powered cost estimation system for machining operations, achieving 99.8% accuracy in cost predictions and 95% accuracy in machining feature recognition, validated against real vendor quotes with 94.8% correlation</li>
+                        <li>Built robust file processing pipeline integrating multiple formats (STL to binvox conversion) and technologies (email monitoring, MySQL database, PDF generation) to create a production-ready solution</li>
+                        <li>Created an automated archival system using MySQL for maintaining historical quote data, enabling data-driven improvements and ensuring seamless retrieval of past project information for reference</li>
                     </ul>
                 </div>
             </div>
@@ -104,7 +130,7 @@
             <!-- Electric Kart Project -->
             <div class="space-y-6">
                 <div class="text-center">
-                    <h3 class="text-2xl text-gray-800 font-medium">High-Performance Electric Kart | Indian Karting Race 6.0</h3>
+                    <h3 class="text-2xl text-gray-800 font-medium">High-Performance Electric Kart | IKR SEASON 6.0 ELECTRIC CATEGORY</h3>
                     <div class="text-gray-600 mt-2">Aug. 2021 - Mar. 2022</div>
                 </div>
                 <div class="grid grid-cols-3 gap-4">
@@ -114,10 +140,8 @@
                 </div>
                 <div class="max-w-4xl mx-auto">
                     <ul class="list-disc pl-5 space-y-2 text-gray-700">
-                        <li>Led 20-member cross-functional team to design and build award-winning electric kart</li>
-                        <li>Developed torque vectoring system using gain-scheduled PID control on Raspberry Pi with ROS2</li>
-                        <li>Implemented real-time telemetry system enabling data-driven performance optimization</li>
-                        <li>Secured 1st in Engineering Design and 2nd Runner-up in Innovation under electric-category</li>
+                        <li>Developed Data Acquisition System capturing real-time telemetry: motor RPM, battery SoC, temperature, and vehicle speed</li>
+                        <li>Secured 1st in Engineering Design and 2nd Runner-up in category</li>
                     </ul>
                 </div>
             </div>
@@ -125,7 +149,7 @@
             <!-- Autonomous Drone -->
             <div class="space-y-6">
                 <div class="text-center">
-                    <h3 class="text-2xl text-gray-800 font-medium">Autonomous Path-follower Drone | Mathworks Minidrone Competition</h3>
+                    <h3 class="text-2xl text-gray-800 font-medium">Autonomous Drone | Future Ready Drone Competition</h3>
                     <div class="text-gray-600 mt-2">Aug. 2021 - Mar. 2022</div>
                 </div>
                 <div class="grid grid-cols-3 gap-4">
@@ -135,9 +159,12 @@
                 </div>
                 <div class="max-w-4xl mx-auto">
                     <ul class="list-disc pl-5 space-y-2 text-gray-700">
-                        <li>Engineered real-time path planning system using MATLAB/Simulink achieving <2cm tracking error</li>
-                        <li>Developed vision-integrated control system with PI loops running at 200Hz</li>
-                        <li>Architected state machine-based control system for autonomous takeoff, tracking, and precision landing</li>
+                        <li>Implemented 4+ flight phases</li>
+                        <li>Designed arc navigation architecture with an inner loop (Path Planner) running at 10Hz and outer loop at 2Hz, achieving sub-2cm cross-track error using velocity control</li>
+                        <li>Designed outer radius (28 pixels), using an adjustable 2.3 inner radius (26 pixels) and configurable field of view for look-ahead point selection</li>
+                        <li>Developed velocity control system maintaining constant Speed using VD = V(vx² + vy²) = &(Rmax + Rmin)/2, with tunable α parameter balancing tracking accuracy versus completion time</li>
+                        <li>Integrated Image-Based Visual Servoing (IBVS) scheme to generate spatial coordinates (xw, yw) while maintaining constant altitude (zH)</li>
+                        <li>Developed Multi-MAV state machine covering phases like Takeoff, Following, End-Marker, Landing with robust transition logic</li>
                     </ul>
                 </div>
             </div>
